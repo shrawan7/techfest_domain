@@ -11,15 +11,22 @@ body {
     font-size: 10px;
     color:#fff;
     overflow-x: hidden;
-    background: #001A54;
+    background: #000;
 }
 
 .bg {
-    min-height: 100vh;
-    background: #000;
+    position: absolute;
+    width: 1536px;
+    height: 721px;
+    overflow: hidden;
+    overflow-y: hidden;
+    background: url(../img/earth1.svg); 
+    background-repeat: no-repeat;
+    
+    /* min-height: 100vh;
     position: relative;
     background-position: center;
-    overflow: hidden;
+    overflow: hidden; */
 }
 .techfest-vector,
 .earth{
@@ -38,11 +45,48 @@ body {
     display: none;
     margin: 0;
     overflow: hidden;
+    overflow-y: hidden;
     position: inherit;
     width: 1535px;
     height: 720px;
     top: -200px;
     background: linear-gradient(88.77deg, #000000 30.58%, rgba(0, 0, 0, 0) 79.74%), url(../img/xyz.png);
+}
+
+.details {
+    position: absolute;
+    left: 153px;
+    top: 370px;
+}
+
+.fac_name1 {
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.fac_name2 {
+    margin-left: 2px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
 }
 
 .vvv {
@@ -115,14 +159,14 @@ body {
     cursor: pointer;
 }
 
-.earth {
+/* .earth {
     top: 0px;
     width: 1780px;
     height: 1170px;
+    transform: rotate(-40.32deg);
     background: url(../img/earth_image.png);
     mix-blend-mode: lighten;
-    transform: rotate(-40.32deg);
-}
+} */
 header{
     position: absolute;
     width: 74px;
@@ -181,6 +225,17 @@ header{
 .hr2 {
     margin-top: 80px;
     margin-bottom: 40px;
+    border: 0.5px solid #FFFFFF;
+}
+
+.hr3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0.5px solid #FFFFFF;
+}
+
+.hr4 {
+    margin-top: 140px;
     border: 0.5px solid #FFFFFF;
 }
 
@@ -357,7 +412,7 @@ header{
     font-size: 18px;
     background: #001A54;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.231818px;
@@ -366,7 +421,7 @@ header{
 }
 
 .copyright {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     font-family: Exo;
     font-style: italic;
@@ -380,7 +435,7 @@ header{
 }
 
 .icons_footer {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     text-align: right;
 }
@@ -521,8 +576,11 @@ MEDIA QUERIES - Responsive
 
 @media screen and (max-width: 1440px){
 
-    hr, .hr1, .hr2 {
-        width: 780px;
+    .hr2, .h3, .hr4{
+        width: 1125px;
+    }
+    .hr1 {
+        width: 1050px;
     }
 
 }
@@ -559,8 +617,18 @@ MEDIA QUERIES - Responsive
         margin-left: 180px;
     }
 
-    .hr2 {
+    .hr2, .hr3, .hr4 {
+        width: 310px;
+    }
+    .domain_head, .domain_para, .explore {
+        left: 40px;
+    }
+    .domain_para {
         width: 300px;
+        height: 200px;
+    }
+    .explore {
+        top: 350px;
     }
     /* body {
         width: 100%;

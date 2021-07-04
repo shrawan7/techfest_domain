@@ -22,15 +22,16 @@
         <p id="desc">Unleash your inner technocrat <br>
                 & Participate in numerous events</p>
         <img src="resources/img/Vector.png" alt="techfest-line" class="techfest-vector" id="vector">
-        <img src="resources/img/earth_image.png" alt="earth_image" class="earth" id="earth">
+        <!-- <img src="resources/img/earth_image.png" alt="earth_image" class="earth" id="earth"> -->
     </div>
     <div id="domain">
         <p>Domains</p>
         <hr class="hr1" style="display: inline-block;"/>
     </div>
+
+    <!--     card domains start     -->
     <div class="wrapper">
         <div class="carousel owl-carousel">
-
             <div class="card" id="card1">
                 <div class="row">
                     <div class="col-md-6">
@@ -133,33 +134,29 @@
                     </div>
                 </div> 
             </div>
-
-            <div class="card" id="card7">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="card-img" src="resources/img/pexels-suludan-diliyaer-596750 (1).png" alt="Card image"/>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body-right">
-                            <h4 class="card-title">Games and fun</h4>
-                            <p class="card-title1">Kermis</p>
-                            <p class="card-text">
-                                What is Kermis ? <br>A gaming arena for all the Game Lovers
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-
         </div>
     </div>
+    <!--    card domains end    -->
 
 
+    <!-- Explore domain page start-->
     <div id="u1" class="uuu">
         <header class="domain_head">Plexus</header>
         <p class="domain_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         <button id="explore" class="explore">Explore Workshops</button>
+        <div class="details">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="resources/img/icons/Ellipse 59.png">
+                </div>
+                <div class="col-md-8">
+                    <p class="fac_name1">Shrawan Kumar</p>
+                    <p class="fac_name2">Faculty Coordinator</p>
+                </div>
+            </div>
+            <p style="margin-left: 100px;">asdcjsbdchsb</p>
+
+        </div>
     </div>
     <div id="v1" class="vvv">
         <div class="container">
@@ -217,7 +214,7 @@
             </div>
 
 
-            <hr style="border: 0.5px solid #fff; width: 1130px;">
+            <hr class="hr3">
             <div class="row">
                 <div class="col-md-3">
                     <div class="rectangle"></div>
@@ -277,7 +274,7 @@
                 </div>
             </div>
 
-            <hr style="width: 1130px;border: 0.5px solid #fff; margin-top: 140px;">
+            <hr class="hr4">
             <div class="row">
                 <div class="col-md-4">
                     <p class="copyright">Copyright © 2021. All Rights Reserved .</p>
@@ -298,28 +295,6 @@
         </div>
     </div>
 
-    <script>
-        document.querySelector("#card1").addEventListener("click", function(){
-            document.querySelector("#u1").style.display="block";
-            document.getElementById('vector').remove();
-            document.getElementById('earth').remove();
-            document.getElementById('header').remove();
-            document.getElementById('desc').remove();
-            document.getElementById('bg').remove();
-            document.getElementById('card1').focus();
-            document.getElementById('card1').style.border="2px solid green";
-        }); 
-
-        document.querySelector("#explore").addEventListener("click", function(){
-            document.querySelector("#v1").style.display="block";
-            document.querySelector("#v1").scrollIntoView();
-            // document.querySelector("#v1").style.scrollBehavior="smooth";
-            document.getElementById('card1').focus();
-            document.getElementById('card1').style.border="2px solid green";
-        }); 
-    </script>
-
     <script src="resources/js/main.js"></script>
 </body>
-
 </html>
