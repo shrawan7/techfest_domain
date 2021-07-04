@@ -41,7 +41,7 @@ body {
     mix-blend-mode: lighten;
 }
 
-.uuu {
+#u1 {
     display: none;
     margin: 0;
     overflow: hidden;
@@ -50,7 +50,7 @@ body {
     width: 1535px;
     height: 720px;
     top: -200px;
-    background: linear-gradient(88.77deg, #000000 30.58%, rgba(0, 0, 0, 0) 79.74%), url(../img/xyz.png);
+    background: linear-gradient(88.77deg, #000000 30.58%, rgba(0, 0, 0, 0) 79.74%), url(../img/precuela.png);
 }
 
 .details {
@@ -59,7 +59,7 @@ body {
     top: 370px;
 }
 
-.fac_name1 {
+#fac_name1 {
     font-family: Exo;
     font-style: italic;
     font-weight: 600;
@@ -75,7 +75,7 @@ body {
     color: #FFFFFF;
 }
 
-.fac_name2 {
+#fac_name2 {
     margin-left: 2px;
     font-family: Exo;
     font-style: italic;
@@ -629,6 +629,15 @@ MEDIA QUERIES - Responsive
     }
     .explore {
         top: 350px;
+    }
+    .workshop_desc {
+        width: 310px;
+        height: 96px;
+    }
+    .date1 {
+        margin-top: 110px;
+        width: 419px;
+        height: 38px;
     }
     /* body {
         width: 100%;
