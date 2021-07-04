@@ -9,9 +9,11 @@ $(".carousel").owlCarousel({
     items: 5,
     responsive:{
         0:{
+            autoplay: false,
             items:1
         },
         600:{
+            autoplay: false,
             items:2
         },
         1000:{
