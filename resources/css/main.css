@@ -10,6 +10,7 @@ body {
     font-family: Exo;
     font-size: 10px;
     color:#fff;
+    overflow-x: hidden;
     background: #001A54;
 }
 
@@ -47,6 +48,7 @@ body {
 .vvv {
     display: none;
     margin: 0;
+    overflow: hidden;
     background: #001A54;
 }
 
@@ -533,11 +535,6 @@ MEDIA QUERIES - Responsive
     #domain {
         left: 35px;
         right: 30px;
-    }
-
-    .uuu {
-        width: 900px;
-        top: -200px;
     }
 }
 
