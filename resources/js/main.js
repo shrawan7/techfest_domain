@@ -20,6 +20,14 @@ $(".carousel").owlCarousel({
     }
 });
 
+$('.owl-nav > div').on('click', function () {
+    $('.owl-carousel').trigger('stop.owl.autoplay');
+    var carousel = $('.owl-carousel').data('owl.carousel');
+    carousel.settings.autoplay = false; //don't know if both are necessary
+    carousel.options.autoplay = false;
+    $('.owl-carousel').trigger('refresh.owl.carousel');
+});
+
 document.querySelector("#card1").addEventListener("click", function(){
     document.querySelector("#u1").style.display="block";
     document.getElementById("u1").style.background = "linear-gradient(88.77deg, #000000 30.58%, rgba(0, 0, 0, 0) 79.74%), url('resources/img/precuela.png')";
